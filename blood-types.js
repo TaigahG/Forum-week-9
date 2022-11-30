@@ -10,7 +10,7 @@ function canGiveBlood(bt1, bt2) {
       }
     }
   } else if (bt1.charAt(0) == "B") {
-    if (bt2.charAt(0) == "B" || bt2.charAt(1) == "B") {
+    if (bt2.charAt(0) == "B" || bt2 == "AB") {
       return true;
     } else {
       return false;
