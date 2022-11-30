@@ -2,8 +2,8 @@ function digitalDecipher(m, k) {
   const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var rslt = "";
   const key = k.toString().split("");
-  for (var i = 0; i < m.length(); i++) {
-    rslt += alphabet[m[i] - 1 - key[i % key.length()]];
+  for (var i = 0; i < m.length; i++) {
+    rslt += alphabet[m[i] - 1 - key[i % key.length]];
   }
 
   return rslt;
